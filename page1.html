@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="main.js"></script>
+</head>
+<style>
+    * {padding: 0px; margin: 0px;}
+    form {display: flex;flex-direction: column;width: 20rem;padding: 5rem;}
+    input,label {margin: 0.2rem;}
+    .container {display: flex;justify-content: center;align-content: center;}
+    #submit, #clear {width: 6rem;}
+    .buttons {display: flex; flex-direction: row; justify-content: center;}
+</style>
+<body>
+    <div class="container">
+        <form method="post">
+            <label for="text">Address</label>
+            <input type="text" name="firstName" id="fnme" required>
+            <label for="text">Street</label>
+            <input type="text" name="lastName" id="lnme" required>
+            <label for="text">Zip</label>
+            <input type="tel" name="phone" id="phnr" required> 
+            <label for="email">Country</label>
+            <input type="email" name="email" id="email" required>
+            <div class="buttons">
+                <input type="submit" name="submit" id="submit">
+                <button id="clear">clear</button>
+            </div>
+        <form>
+    </div>
+</body>
+</html>
